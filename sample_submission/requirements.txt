@@ -1,0 +1,3 @@
+# Add more or remove these sample requirements
+pandas
+numpy
