@@ -6,7 +6,7 @@ Participants are to submit a **compressed Docker image in the tar.gz format** by
 
 We would be using Docker for this challenge so that participants can choose their preferred programming languages and dependencies to create the best perfoming detection models.
 
-To build and run GPU accelerated Docker containers, please install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker#getting-started).
+To build and run GPU accelerated Docker containers, please install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html).
 
 ## Usage of sample submission
 
@@ -63,7 +63,7 @@ and has three main functions:
 
 1. Read the mp4 videos from directory specified in the aforementioned `-input` argument
 2. Predicts the probability that each input video is fake
-3. Writes a csv output file with the name and at the path specified in the aforementioned `-output` argument. The csv file should contain two columns filename and probability where probability is the estimated probability that the video, stated in filename, is fake. An [example csv](local_test/test_output/sample_submission.csv) is provided.
+3. Writes a csv output file with the name and at the path specified in the aforementioned `-output` argument. The csv file should contain two columns **filename** and **probability** where probability is the estimated probability that the video, stated in filename, is fake. An [example csv](local_test/test_output/sample_submission.csv) is provided.
 
 You may refer to the [`main.py`](sample_submission/main.py) of the sample submission as an example of a main file.
 
@@ -125,4 +125,4 @@ python /app/main.py -input /data/input/ -output /data/output/submission.csv
 docker save your_image:latest | gzip > your_image.tar.gz
 ```
 
-_Please upload `your_image.tar.gz` onto the challenge platform under the "Make a submission" page._
+_Please upload `your_image.tar.gz` onto the [challenge platform]() under the "Make a submission" page._

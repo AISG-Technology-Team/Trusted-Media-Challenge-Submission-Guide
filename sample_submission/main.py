@@ -12,7 +12,7 @@ def main(input_dir, output_file):
   proba = random.uniform(size=len(test_videos))
 
   # create output
-  output_df = pd.DataFrame({"id": test_videos, "label": proba})
+  output_df = pd.DataFrame({"filename": test_videos, "probability": proba})
 
   # write ouput as csv
   output_df.to_csv(output_file, index=False)
