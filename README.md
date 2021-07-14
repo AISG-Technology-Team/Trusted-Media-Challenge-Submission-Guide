@@ -1,6 +1,6 @@
 # AI Singapore Trusted Media Challenge Submission Guide
 
-Participants are to submit a **compressed Docker image in the tar.gz format** by uploading it via the “Make a submission” page of the [challenge platform](). This repository serves as a step by step guide to help participants with creating a valid Docker image for the Trusted Media Challenge.
+Participants are to submit a **compressed Docker image in the tar.gz format** to the [challenge platform](https://trustedmedia.aisingapore.org/competition/aisg/make-submission/). This repository serves as a step by step guide to help participants with creating a valid submission for the Trusted Media Challenge.
 
 ## Getting Started
 
@@ -41,6 +41,14 @@ docker run --rm -it \
  sample_image \
  -input /data/input/ -output /data/output/submission.csv
 ```
+
+### Compress your sample image to .tar.gz format using [docker save](https://docs.docker.com/engine/reference/commandline/save/)
+
+```
+docker save sample_image:latest | gzip > sample_image.tar.gz
+```
+
+### Upload `sample_image.tar.gz` onto the [challenge platform](https://trustedmedia.aisingapore.org/competition/aisg/make-submission/)
 
 ## Creating your own submission
 
@@ -125,4 +133,4 @@ python /app/main.py -input /data/input/ -output /data/output/submission.csv
 docker save your_image:latest | gzip > your_image.tar.gz
 ```
 
-_Please upload `your_image.tar.gz` onto the [challenge platform]() under the "Make a submission" page._
+### Please upload `your_image.tar.gz` onto the [challenge platform](https://trustedmedia.aisingapore.org/competition/aisg/make-submission/).
