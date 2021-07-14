@@ -50,7 +50,7 @@ docker save sample_image:latest | gzip > sample_image.tar.gz
 
 ### Upload sample image
 
-Submit your `sample_image.tar.gz` onto the [challenge platform](https://trustedmedia.aisingapore.org/competition/aisg/make-submission/)
+Submit your `sample_image.tar.gz` image onto the [challenge platform](https://trustedmedia.aisingapore.org/competition/aisg/make-submission/)
 
 ## Creating your own submission
 
@@ -137,4 +137,4 @@ docker save your_image:latest | gzip > your_image.tar.gz
 
 ### Upload your image
 
-Submit your `your_image.tar.gz` onto the [challenge platform](https://trustedmedia.aisingapore.org/competition/aisg/make-submission/)
+Submit your `your_image.tar.gz` image onto the [challenge platform](https://trustedmedia.aisingapore.org/competition/aisg/make-submission/)
